@@ -1,0 +1,32 @@
+@mixin brandText ($size,$weight,$space) {
+    font-family: $font-main;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $space;
+}
+
+@mixin commonText($size,$weight,$space) {
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $space;
+}
+
+@mixin formatBeforeAfter ($w,$h,$bg) {
+    width: $w;
+    height: $h;
+    background: $bg;
+    content: "";
+    position: absolute;
+}
+
+@mixin formatBackground ($url) {
+    background-image: $url;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin positioningElement($top, $left) {
+    top: $top;
+    left: $left;
+}

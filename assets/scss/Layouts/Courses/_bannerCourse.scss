@@ -1,0 +1,190 @@
+.bannerCourse {
+    min-height: 600px;
+    height: 100vh;
+    .bannerCourse-container {
+        height: 100%;
+        .bannerCourse-anim {
+            position: relative;
+            height: 100%;
+            .anim-skill,
+            .anim-img-coder {
+                position: absolute;
+                width: auto;
+                height: 6%;
+            }
+            .anim-img-coder {
+                height: 30%;
+                @include positioningElement(65%, 50%);
+                transform: translate(-50%, -50%);
+            }
+            .anim-skill-1 {
+                @include positioningElement(35%, 50%);
+                animation: js-rot 4s infinite linear;
+            }
+            @keyframes js-rot {
+                from {
+                    transform: rotate(45deg) translate(20px) rotate(-45deg);
+                }
+                to {
+                    transform: rotate(405deg) translate(20px) rotate(-405deg);
+                }
+            }
+            .anim-skill-2 {
+                @include positioningElement(43%, 25%);
+                animation: html-rot 4s infinite linear;
+            }
+            @keyframes html-rot {
+                from {
+                    transform: rotate(-45deg) translate(-13px) rotate(45deg);
+                }
+                to {
+                    transform: rotate(-405deg) translate(-13px) rotate(405deg);
+                }
+            }
+            .anim-skill-3 {
+                @include positioningElement(38%, 6%);
+                animation: css-rot 3s infinite linear;
+            }
+            @keyframes css-rot {
+                from {
+                    transform: rotate(45deg) translate(-5px) rotate(-45deg);
+                }
+                to {
+                    transform: rotate(405deg) translate(-5px) rotate(-405deg);
+                }
+            }
+            .anim-skill-4 {
+                @include positioningElement(40%, 70%);
+                animation: ang-rot 2s infinite linear;
+            }
+            @keyframes ang-rot {
+                from {
+                    transform: rotate(-45deg) translate(-8px) rotate(45deg);
+                }
+                to {
+                    transform: rotate(-405deg) translate(-8px) rotate(405deg);
+                }
+            }
+            .anim-skill-5 {
+                @include positioningElement(50%, 5%);
+                animation: node-rot 3s infinite linear;
+            }
+            @keyframes node-rot {
+                from {
+                    transform: rotate(45deg) translate(10px) rotate(-45deg);
+                }
+                to {
+                    transform: rotate(405deg) translate(10px) rotate(-405deg);
+                }
+            }
+            .anim-skill-6 {
+                @include positioningElement(50%, 81%);
+                animation: react-rot 2.5s infinite linear;
+            }
+            @keyframes react-rot {
+                from {
+                    transform: rotate(45deg) translate(-20px) rotate(-45deg);
+                }
+                to {
+                    transform: rotate(405deg) translate(-20px) rotate(-405deg);
+                }
+            }
+        }
+        .bannerCourse-text {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            .bannerCourse-feature {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                .bannerCourse-card {
+                    position: relative;
+                    border-radius: 8px;
+                }
+                .card-img {
+                    width: 300px;
+                    height: 400px;
+                    top: 50%;
+                    left: 17%;
+                    transform: translateX(-147%) translateY(-50%);
+                    opacity: 0;
+                    transition: all 0.5s ease-in;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                    .card-circle {
+                        position: absolute;
+                        height: 150px;
+                        width: 150px;
+                        left: 50%;
+                        top: 5%;
+                        transform: translateX(-50%);
+                        border-radius: 50%;
+                        background: transparent;
+                        border: 3px #fff solid;
+                        box-shadow: 0 0 20px #fff, inset 0 0 20px #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        visibility: hidden;
+                        .card-number {
+                            font-size: 50px;
+                            color: white;
+                            text-shadow: 0 0 20px #fff;
+                        }
+                    }
+                }
+                .card-content {
+                    width: 400px;
+                    height: 300px;
+                    top: 23%;
+                    left: 37%;
+                    transform: translateX(105%) translateY(-50%);
+                    opacity: 0;
+                    transition: all 0.5s ease-in;
+                    box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.3);
+                    .card-content-title {
+                        width: 100%;
+                        padding: 8px;
+                        .bannerCourse-card-img {
+                            width: 50px;
+                            height: auto;
+                        }
+                        .bannerCourse-card-title {
+                            @include brandText(20px, bold, 2px);
+                        }
+                    }
+                    .card-content-body {
+                        .navbar {
+                            justify-content: space-around;
+                            .navbar-nav {
+                                padding: 20px;
+                                list-style: square;
+                                .nav-item:not(:last-child) {
+                                    padding-bottom: 10px;
+                                }
+                                .nav-item {
+                                    @include commonText(17px, bold, 1px);
+                                    color: rgb(85, 84, 84);
+                                }
+                            }
+                        }
+                    }
+                    .bannerCourse-btn {
+                        position: absolute;
+                        right: 5%;
+                        bottom: 5%;
+                    }
+                }
+            }
+            .active .card-img {
+                transform: translate(0, -50%);
+                opacity: 1;
+            }
+            .active .card-content {
+                transform: translate(-10%, -50%);
+                opacity: 1;
+            }
+        }
+    }
+}

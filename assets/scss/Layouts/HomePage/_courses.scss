@@ -1,0 +1,71 @@
+.course {
+    .course-container {
+        .course-item-1 {
+            @include formatBackground(url('../img/course-basic.jpg'));
+        }
+        .course-item-2 {
+            @include formatBackground(url('../img/front-end.jpg'));
+        }
+        .course-item-3 {
+            @include formatBackground(url('../img/back-end.jpg'));
+        }
+        .course-item {
+            position: relative;
+            max-height: 600px;
+            height: 600px;
+            -webkit-transition: all 0.5s ease-in;
+            transition: all 1s ease-in;
+            background-size: 100% 100%;
+            &:hover {
+                background-size: 150% 150%;
+            }
+            &:before {
+                @include formatBeforeAfter(100%,
+                100%,
+                rgba(0,
+                0,
+                0,
+                0.7));
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .course-item-wrap {
+                position: absolute;
+                width: 85%;
+                height: -webkit-fit-content;
+                height: -moz-fit-content;
+                height: fit-content;
+                z-index: 999;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                .course-item-heading {
+                    margin-bottom: $heading-mgb * 2;
+                    .course-item-link {
+                        text-decoration: none;
+                        .course-item-icon {
+                            font-size: 100px;
+                            font-weight: 900;
+                            color: #fff;
+                        }
+                        .course-item-name {
+                            color: #fff;
+                            .text-color {
+                                color: #777;
+                            }
+                        }
+                    }
+                }
+                .couse-item-detail {
+                    padding: 0 15px;
+                    text-shadow: 1px 1px #ccc;
+                    font-size: 1rem;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

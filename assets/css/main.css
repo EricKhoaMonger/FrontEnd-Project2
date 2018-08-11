@@ -1,0 +1,784 @@
+body {
+  font-family: "Roboto", sans-serif; }
+
+.about-container, .founder-container, .contact-container, .mainCourse-container {
+  padding: 80px 0; }
+
+.testimonial {
+  background-image: url("../img/testimonial.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; }
+  .testimonial .testimonial-container {
+    padding: 80px 0;
+    background: rgba(0, 0, 0, 0.7); }
+    .testimonial .testimonial-container .testimonial-heading .testimonial-title {
+      font-family: "Love Ya Like A Sister", cursive;
+      font-size: 35px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      color: #fff; }
+    .testimonial .testimonial-container .testimonial-heading .testimonial-subtitle {
+      font-size: 20px;
+      font-weight: 100;
+      letter-spacing: 0px;
+      color: #eee; }
+    .testimonial .testimonial-container .testimonial-container-wrap #testiCarousel .carousel-inner .carousel-item .media {
+      align-items: center; }
+      .testimonial .testimonial-container .testimonial-container-wrap #testiCarousel .carousel-inner .carousel-item .media .media-left {
+        margin: 10px; }
+        .testimonial .testimonial-container .testimonial-container-wrap #testiCarousel .carousel-inner .carousel-item .media .media-left img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+          transition: all 0.2s ease-in; }
+          .testimonial .testimonial-container .testimonial-container-wrap #testiCarousel .carousel-inner .carousel-item .media .media-left img:hover {
+            transform: scale(1.1, 1.1); }
+      .testimonial .testimonial-container .testimonial-container-wrap #testiCarousel .carousel-inner .carousel-item .media .media-body {
+        color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.3); }
+
+.contact {
+  position: relative; }
+  .contact .contact-container .contact-heading .contact-title {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 40px; }
+  .contact .contact-container .contact-detail .contact-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0px; }
+  .contact .contact-container .contact-detail .navbar {
+    padding: 0; }
+    .contact .contact-container .contact-detail .navbar .nav .nav-item {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      margin-bottom: 20px; }
+      .contact .contact-container .contact-detail .navbar .nav .nav-item .fa {
+        line-height: 40px; }
+  .contact .contact-form {
+    width: 50%;
+    min-height: 300px;
+    background: #eee;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: -14%;
+    right: 0; }
+    .contact .contact-form .contact-form-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 80px;
+      width: 100%; }
+      .contact .contact-form .contact-form-wrapper .contact-form-inputs .input-field {
+        padding: 20px;
+        margin-bottom: 30px; }
+      .contact .contact-form .contact-form-wrapper .contact-form-inputs textarea {
+        resize: none; }
+
+@media screen and (max-width: 992px) {
+  .contact {
+    position: relative; }
+    .contact .contact-container .contact-heading .contact-title {
+      font-family: "Love Ya Like A Sister", cursive;
+      font-size: 35px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 40px; }
+    .contact .contact-container .contact-detail .contact-subtitle {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0px; }
+    .contact .contact-container .contact-detail .navbar {
+      padding: 0; }
+      .contact .contact-container .contact-detail .navbar .nav .nav-item {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        margin-bottom: 20px; }
+        .contact .contact-container .contact-detail .navbar .nav .nav-item .fa {
+          line-height: 40px; }
+    .contact .contact-form {
+      width: 50%;
+      min-height: 300px;
+      background: #eee;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      bottom: -14%;
+      right: 0; }
+      .contact .contact-form .contact-form-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 80px;
+        width: 100%; }
+        .contact .contact-form .contact-form-wrapper .contact-form-inputs .input-field {
+          padding: 20px;
+          margin-bottom: 30px; }
+        .contact .contact-form .contact-form-wrapper .contact-form-inputs textarea {
+          resize: none; } }
+footer .footer .footer-container {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  overflow: hidden; }
+  footer .footer .footer-container .footer-about .footer-brand-text {
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    margin-top: 0;
+    display: inline-block;
+    height: 70px; }
+    footer .footer .footer-container .footer-about .footer-brand-text .footer-brand-logo {
+      height: 50px; }
+  footer .footer .footer-container .footer-about .footer-lorem {
+    padding-top: 16px;
+    padding-bottom: 16px; }
+  footer .footer .footer-container .footer-sitemap .footer-sitemap-title {
+    display: inline-block;
+    height: 70px; }
+  footer .footer .footer-container .footer-social .footer-social-title {
+    display: inline-block;
+    height: 70px; }
+  footer .footer .footer-container .footer-upcoming .footer-upcoming-title {
+    display: inline-block;
+    height: 70px; }
+
+.header-nav-menu {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  .header-nav-menu .header-nav-menu-container .header-brand {
+    width: fit-content;
+    -webkit-transition: all 0.2s ease-in; }
+    .header-nav-menu .header-nav-menu-container .header-brand .header-brand_text {
+      font-family: "Love Ya Like A Sister", cursive;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 2px; }
+    .header-nav-menu .header-nav-menu-container .header-brand .header-brand_logo {
+      width: 80px;
+      transition: all 0.2s ease-in; }
+    .header-nav-menu .header-nav-menu-container .header-brand .header-brand-toggle {
+      width: 40px; }
+
+.header-nav-menu-toggle {
+  background: white;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: 0 1px 3px #ccc;
+  box-shadow: 0 1px 3px #ccc; }
+
+.banner {
+  background-image: url("../img/jumbotron-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 0; }
+  .banner .banner-container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .banner .banner-container .row .banner-content {
+      position: relative; }
+      .banner .banner-container .row .banner-content .banner-title {
+        font-size: 70px;
+        font-weight: 900;
+        letter-spacing: 3px;
+        opacity: 0;
+        -webkit-animation: titleAnim 1s 0.5s forwards ease-in-out;
+        animation: titleAnim 1s 0.5s forwards ease-in-out;
+        text-shadow: 5px 5px #e8e8e8, 8px 8px #a7a7a7; }
+@-webkit-keyframes titleAnim {
+  0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(xx) translateX(0);
+    transform: rotate(xx) translateX(0);
+    opacity: 1; } }
+@keyframes titleAnim {
+  0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(xx) translateX(0);
+    transform: rotate(xx) translateX(0);
+    opacity: 1; } }
+      .banner .banner-container .row .banner-content .text-secondary {
+        text-align: right;
+        position: absolute;
+        right: 60px;
+        opacity: 0;
+        -webkit-animation: subTextAnim 1s 0.5s forwards ease-in-out;
+        animation: subTextAnim 1s 0.5s forwards ease-in-out; }
+@-webkit-keyframes subTextAnim {
+  0% {
+    -webkit-transform: rotate(0) translateX(100%);
+    transform: rotate(0) translateX(100%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 1; } }
+@keyframes subTextAnim {
+  0% {
+    -webkit-transform: rotate(0) translateX(100%);
+    transform: rotate(0) translateX(100%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+    opacity: 1; } }
+        .banner .banner-container .row .banner-content .text-secondary:after {
+          width: 12%;
+          height: 3px;
+          background: #000;
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 280px; }
+        .banner .banner-container .row .banner-content .text-secondary:before {
+          width: 60%;
+          height: 3px;
+          background: #000;
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -180px; }
+
+.about .about-container .about-intro {
+  margin-bottom: 100px;
+  padding-bottom: 30px; }
+  .about .about-container .about-intro .about-logo {
+    width: 100px;
+    margin-bottom: 20px; }
+  .about .about-container .about-intro .about-title {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  .about .about-container .about-intro .about-subtitle {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0px; }
+  .about .about-container .about-intro:after {
+    width: 300px;
+    height: 2px;
+    background: #333;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+.about .about-container .about-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .about .about-container .about-detail .about-detail-title {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px; }
+  .about .about-container .about-detail .about-detail-content {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    text-align: justify;
+    line-height: 1.5; }
+.about .about-container .about-vid iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 250px; }
+.about .about-container .about-item {
+  padding: 0 30px; }
+
+.founder .founder-container .founder-intro {
+  margin-bottom: 100px;
+  padding-bottom: 30px; }
+  .founder .founder-container .founder-intro .founder-logo {
+    width: 100px;
+    margin-bottom: 20px; }
+  .founder .founder-container .founder-intro .founder-title {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  .founder .founder-container .founder-intro .founder-subtitle {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0px; }
+  .founder .founder-container .founder-intro:after {
+    width: 300px;
+    height: 2px;
+    background: #333;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+.founder .founder-container .founder-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .founder .founder-container .founder-detail .founder-detail-content {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    text-align: justify;
+    line-height: 1.5; }
+.founder .founder-container .founder-item {
+  padding: 0 30px; }
+
+.course .course-container .course-item-1 {
+  background-image: url("../img/course-basic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+.course .course-container .course-item-2 {
+  background-image: url("../img/front-end.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+.course .course-container .course-item-3 {
+  background-image: url("../img/back-end.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+.course .course-container .course-item {
+  position: relative;
+  max-height: 600px;
+  height: 600px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 1s ease-in;
+  background-size: 100% 100%; }
+  .course .course-container .course-item:hover {
+    background-size: 150% 150%; }
+  .course .course-container .course-item:before {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .course .course-container .course-item .course-item-wrap {
+    position: absolute;
+    width: 85%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .course .course-container .course-item .course-item-wrap .course-item-heading {
+      margin-bottom: 40px; }
+      .course .course-container .course-item .course-item-wrap .course-item-heading .course-item-link {
+        text-decoration: none; }
+        .course .course-container .course-item .course-item-wrap .course-item-heading .course-item-link .course-item-icon {
+          font-size: 100px;
+          font-weight: 900;
+          color: #fff; }
+        .course .course-container .course-item .course-item-wrap .course-item-heading .course-item-link .course-item-name {
+          color: #fff; }
+          .course .course-container .course-item .course-item-wrap .course-item-heading .course-item-link .course-item-name .text-color {
+            color: #777; }
+    .course .course-container .course-item .course-item-wrap .couse-item-detail {
+      padding: 0 15px;
+      text-shadow: 1px 1px #ccc;
+      font-size: 1rem;
+      text-align: justify; }
+
+.bannerCourse {
+  min-height: 600px;
+  height: 100vh; }
+  .bannerCourse .bannerCourse-container {
+    height: 100%; }
+    .bannerCourse .bannerCourse-container .bannerCourse-anim {
+      position: relative;
+      height: 100%; }
+      .bannerCourse .bannerCourse-container .bannerCourse-anim .anim-skill,
+      .bannerCourse .bannerCourse-container .bannerCourse-anim .anim-img-coder {
+        position: absolute;
+        width: auto;
+        height: 6%; }
+      .bannerCourse .bannerCourse-container .bannerCourse-anim .anim-img-coder {
+        height: 30%;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .bannerCourse .bannerCourse-container .bannerCourse-anim .anim-skill-1 {
+        top: 35%;
+        left: 50%;
+        animation: js-rot 4s infinite linear; }
+@keyframes js-rot {
+  from {
+    transform: rotate(45deg) translate(20px) rotate(-45deg); }
+  to {
+    transform: rotate(405deg) translate(20px) rotate(-405deg); } }
+      .bannerCourse .bannerCourse-container .bannerCourse-anim .anim-skill-2 {
+        top: 43%;
+        left: 25%;
+        animation: html-rot 4s infinite linear; }
+@keyframes html-rot {
+  from {
+    transform: rotate(-45deg) translate(-13px) rotate(45deg); }
+  to {
+    transform: rotate(-405deg) translate(-13px) rotate(405deg); } }
+      .bannerCourse .bannerCourse-container .bannerCourse-anim .anim-skill-3 {
+        top: 38%;
+        left: 6%;
+        animation: css-rot 3s infinite linear; }
+@keyframes css-rot {
+  from {
+    transform: rotate(45deg) translate(-5px) rotate(-45deg); }
+  to {
+    transform: rotate(405deg) translate(-5px) rotate(-405deg); } }
+      .bannerCourse .bannerCourse-container .bannerCourse-anim .anim-skill-4 {
+        top: 40%;
+        left: 70%;
+        animation: ang-rot 2s infinite linear; }
+@keyframes ang-rot {
+  from {
+    transform: rotate(-45deg) translate(-8px) rotate(45deg); }
+  to {
+    transform: rotate(-405deg) translate(-8px) rotate(405deg); } }
+      .bannerCourse .bannerCourse-container .bannerCourse-anim .anim-skill-5 {
+        top: 50%;
+        left: 5%;
+        animation: node-rot 3s infinite linear; }
+@keyframes node-rot {
+  from {
+    transform: rotate(45deg) translate(10px) rotate(-45deg); }
+  to {
+    transform: rotate(405deg) translate(10px) rotate(-405deg); } }
+      .bannerCourse .bannerCourse-container .bannerCourse-anim .anim-skill-6 {
+        top: 50%;
+        left: 81%;
+        animation: react-rot 2.5s infinite linear; }
+@keyframes react-rot {
+  from {
+    transform: rotate(45deg) translate(-20px) rotate(-45deg); }
+  to {
+    transform: rotate(405deg) translate(-20px) rotate(-405deg); } }
+    .bannerCourse .bannerCourse-container .bannerCourse-text {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      overflow: hidden; }
+      .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature {
+        height: 100%;
+        width: 100%;
+        position: absolute; }
+        .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .bannerCourse-card {
+          position: relative;
+          border-radius: 8px; }
+        .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-img {
+          width: 300px;
+          height: 400px;
+          top: 50%;
+          left: 17%;
+          transform: translateX(-147%) translateY(-50%);
+          opacity: 0;
+          transition: all 0.5s ease-in;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+          .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-img .card-circle {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            left: 50%;
+            top: 5%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            background: transparent;
+            border: 3px #fff solid;
+            box-shadow: 0 0 20px #fff, inset 0 0 20px #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            visibility: hidden; }
+            .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-img .card-circle .card-number {
+              font-size: 50px;
+              color: white;
+              text-shadow: 0 0 20px #fff; }
+        .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-content {
+          width: 400px;
+          height: 300px;
+          top: 23%;
+          left: 37%;
+          transform: translateX(105%) translateY(-50%);
+          opacity: 0;
+          transition: all 0.5s ease-in;
+          box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.3); }
+          .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-content .card-content-title {
+            width: 100%;
+            padding: 8px; }
+            .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-content .card-content-title .bannerCourse-card-img {
+              width: 50px;
+              height: auto; }
+            .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-content .card-content-title .bannerCourse-card-title {
+              font-family: "Love Ya Like A Sister", cursive;
+              font-size: 20px;
+              font-weight: bold;
+              letter-spacing: 2px; }
+          .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-content .card-content-body .navbar {
+            justify-content: space-around; }
+            .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-content .card-content-body .navbar .navbar-nav {
+              padding: 20px;
+              list-style: square; }
+              .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-content .card-content-body .navbar .navbar-nav .nav-item:not(:last-child) {
+                padding-bottom: 10px; }
+              .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-content .card-content-body .navbar .navbar-nav .nav-item {
+                font-size: 17px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                color: #555454; }
+          .bannerCourse .bannerCourse-container .bannerCourse-text .bannerCourse-feature .card-content .bannerCourse-btn {
+            position: absolute;
+            right: 5%;
+            bottom: 5%; }
+      .bannerCourse .bannerCourse-container .bannerCourse-text .active .card-img {
+        transform: translate(0, -50%);
+        opacity: 1; }
+      .bannerCourse .bannerCourse-container .bannerCourse-text .active .card-content {
+        transform: translate(-10%, -50%);
+        opacity: 1; }
+
+.course .course-container .course-item-1 {
+  background-image: url("../img/course-basic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+.course .course-container .course-item-2 {
+  background-image: url("../img/front-end.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+.course .course-container .course-item-3 {
+  background-image: url("../img/back-end.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+.course .course-container .course-item {
+  position: relative;
+  max-height: 600px;
+  height: 600px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 1s ease-in;
+  background-size: 100% 100%; }
+  .course .course-container .course-item:hover {
+    background-size: 150% 150%; }
+  .course .course-container .course-item:before {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .course .course-container .course-item .course-item-wrap {
+    position: absolute;
+    width: 85%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .course .course-container .course-item .course-item-wrap .course-item-heading {
+      margin-bottom: 40px; }
+      .course .course-container .course-item .course-item-wrap .course-item-heading .course-item-link {
+        text-decoration: none; }
+        .course .course-container .course-item .course-item-wrap .course-item-heading .course-item-link .course-item-icon {
+          font-size: 100px;
+          font-weight: 900;
+          color: #fff; }
+        .course .course-container .course-item .course-item-wrap .course-item-heading .course-item-link .course-item-name {
+          color: #fff; }
+          .course .course-container .course-item .course-item-wrap .course-item-heading .course-item-link .course-item-name .text-color {
+            color: #777; }
+    .course .course-container .course-item .course-item-wrap .couse-item-detail {
+      padding: 0 15px;
+      text-shadow: 1px 1px #ccc;
+      font-size: 1rem;
+      text-align: justify; }
+
+.adminPageMain .row .adminPageMainUl .adminPageMainUl-nav {
+  border: 1px solid #bebebe;
+  border-radius: 5px; }
+  .adminPageMain .row .adminPageMainUl .adminPageMainUl-nav .nav-item .nav-link {
+    padding: 16px;
+    border: 0;
+    color: #111; }
+  .adminPageMain .row .adminPageMainUl .adminPageMainUl-nav .nav-item:not(:last-child) {
+    border-bottom: 1px solid #bebebe; }
+  .adminPageMain .row .adminPageMainUl .adminPageMainUl-nav .nav-item .active {
+    background: #343a40;
+    color: #fff; }
+  .adminPageMain .row .adminPageMainUl .adminPageMainUl-nav .nav-item:hover {
+    background: #bebebe; }
+    .adminPageMain .row .adminPageMainUl .adminPageMainUl-nav .nav-item:hover .nav-link {
+      color: #fff; }
+.adminPageMain .row .adminPageContent #overview .card-header,
+.adminPageMain .row .adminPageContent #courseList .card-header,
+.adminPageMain .row .adminPageContent #userList .card-header {
+  padding: 16px; }
+  .adminPageMain .row .adminPageContent #overview .card-header .addBtn,
+  .adminPageMain .row .adminPageContent #courseList .card-header .addBtn,
+  .adminPageMain .row .adminPageContent #userList .card-header .addBtn {
+    cursor: pointer; }
+.adminPageMain .row .adminPageContent #userList thead td,
+.adminPageMain .row .adminPageContent #userList tbody td, .adminPageMain .row .adminPageContent #courseList thead td,
+.adminPageMain .row .adminPageContent #courseList tbody td {
+  width: 14%;
+  max-width: 14%;
+  vertical-align: middle; }
+.adminPageMain .row .adminPageContent #userList tbody tr td .img-fluid, .adminPageMain .row .adminPageContent #courseList tbody tr td .img-fluid {
+  max-height: 200px; }
+.adminPageMain .row .adminPageContent #courseList,
+.adminPageMain .row .adminPageContent #userList {
+  border: 0; }
+  .adminPageMain .row .adminPageContent #courseList .card-body,
+  .adminPageMain .row .adminPageContent #userList .card-body {
+    padding: 0; }
+  .adminPageMain .row .adminPageContent #courseList .myPagination .page-item .page-link,
+  .adminPageMain .row .adminPageContent #userList .myPagination .page-item .page-link {
+    color: #111; }
+  .adminPageMain .row .adminPageContent #courseList .myPagination .page-item.active .page-link,
+  .adminPageMain .row .adminPageContent #userList .myPagination .page-item.active .page-link {
+    background: #212529;
+    color: #fff;
+    border-color: #212529; }
+    .adminPageMain .row .adminPageContent #courseList .myPagination .page-item.active .page-link:visited,
+    .adminPageMain .row .adminPageContent #userList .myPagination .page-item.active .page-link:visited {
+      outline: 0; }
+
+.adminNavbar {
+  padding-top: 0;
+  padding-bottom: 0; }
+  .adminNavbar .container .dashboard-brand_logo {
+    width: 40px; }
+
+body {
+  overflow-x: hidden; }
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  #wrapper #sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    #wrapper #sidebar-wrapper .sidebar-nav {
+      position: absolute;
+      top: 0;
+      width: 250px;
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      #wrapper #sidebar-wrapper .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 40px; }
+        #wrapper #sidebar-wrapper .sidebar-nav li a {
+          display: block;
+          text-decoration: none;
+          color: #999999; }
+          #wrapper #sidebar-wrapper .sidebar-nav li a:hover {
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.2); }
+          #wrapper #sidebar-wrapper .sidebar-nav li a:active, #wrapper #sidebar-wrapper .sidebar-nav li a:focus {
+            text-decoration: none; }
+      #wrapper #sidebar-wrapper .sidebar-nav > .sidebar-brand {
+        height: 65px;
+        font-size: 18px;
+        line-height: 60px; }
+        #wrapper #sidebar-wrapper .sidebar-nav > .sidebar-brand a {
+          color: #999999; }
+          #wrapper #sidebar-wrapper .sidebar-nav > .sidebar-brand a:hover {
+            color: #fff;
+            background: none; }
+  #wrapper #page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px; }
+
+.toggled {
+  padding-left: 250px; }
+  .toggled #sidebar-wrapper {
+    width: 250px; }
+  .toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px; }
+
+@media (min-width: 768px) {
+  #wrapper {
+    padding-left: 0; }
+    #wrapper #sidebar-wrapper {
+      width: 0; }
+    #wrapper #page-content-wrapper {
+      padding: 20px;
+      position: relative; }
+
+  .toggled {
+    padding-left: 250px; }
+    .toggled #sidebar-wrapper {
+      width: 250px; }
+    .toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0; } }
+
+/*# sourceMappingURL=main.css.map */

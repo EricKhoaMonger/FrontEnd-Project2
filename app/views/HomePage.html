@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./../../ASSETS/img/logo-header.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+    <!-- WOW CSS -->
+    <link rel="stylesheet" href="../../assets/vendors/css/animate.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../../ASSETS/css/main.css" type="text/css">
+
+    <title>CyberSoft Academy</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light header-nav-menu">
+        <div class="container header-nav-menu-container">
+            <a class="navbar-brand header-brand" href="HomePage.html">
+                <img src="./../../ASSETS/img/logo-header.png" alt="" class="img-fluid header-brand_logo">
+                <span class="header-brand_text">CyberSoft Academy</span>
+            </a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapseNavHeader" aria-controls="collapseNavHeader"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapseNavHeader">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="HomePage.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="header-signin-signup">
+                            <button class="btn btn-dark" data-toggle="modal" data-target="#SignInSignUp" id="btnSignInSignUp">Sign In | Sign Up</button>
+                        </div>
+                        <div class="dropdown open">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Hello,
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="userDropdown">
+                                <button class="dropdown-item" id="toMyAccountBtn" href="#">My Account</button>
+                                <button class="dropdown-item" href="#" id="btnSignOut">Sign Out</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- END HEADER -->
+
+    <!-- BANNER -->
+    <div class="banner jumbotron jumbotron-fluid">
+        <div class="container banner-container">
+            <div class="row">
+                <div class="col-12 banner-content">
+                    <h1 class="banner-title">Best Place To
+                        <br> Learn To Code</h1>
+                    <p class="lead text-secondary">Become an EXPERT in no time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END BANNER -->
+
+    <!-- ABOUT -->
+    <div class="container about" id="about">
+        <div class="row about-container">
+            <div class="col-12 text-center about-intro">
+                <img src="./../../ASSETS/img/logo-header.png" alt="" class="img-fluid about-logo">
+                <h1 class="display-4 about-title">
+                    Inspired By Excellence &amp; Innovation
+                </h1>
+                <p class="text-secondary about-subtitle">
+                    We offer a wide range of high quality of teaching and extra-curricular activities.
+                </p>
+            </div>
+
+            <div class="col-lg-7 about-detail about-item">
+                <h1 class="about-detail-title text-md-center">
+                    WHY CHOOSE CYBERSOFT ACADEMY?
+                </h1>
+                <p class="lead about-detail-content text-center-md">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum obcaecati quaerat necessitatibus nisi deserunt
+                    consectetur quas unde labore, corrupti harum similique qui possimus debitis iusto enim? Iusto repellat
+                    a maiores beatae distinctio animi cum?
+                </p>
+                <p class="lead about-detail-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus voluptatem eligendi sit nemo fugit
+                    nisi saepe ullam deleniti, nesciunt illo!</p>
+            </div>
+            <div class="col-lg-5 about-vid about-item">
+                <iframe src="https://www.youtube.com/embed/Qmposk8Lfyg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- END ABOUT -->
+
+    <!-- COURSES -->
+    <div class="container-fluid course" id="course">
+        <div class="row course-container">
+            <div class="col-lg-4 text-center course-item course-item-1">
+                <div class="course-item-wrap wow fadeIn animated">
+                    <div class="course-item-heading">
+                        <a href="Courses.html" class="course-item-link">
+                            <i class="fa fa-mixcloud course-item-icon"></i>
+                            <h1 class="text-bold course-item-name">
+                                Programming Basics
+                            </h1>
+                        </a>
+                    </div>
+                    <p class="lead text-secondary couse-item-detail">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis repudiandae dignissimos harum quam, fugit nemo totam
+                        laboriosam rem? Quaerat
+                    </p>
+                    <button class="btn btn-outline-light">See This Route</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 text-center course-item course-item-2">
+                <div class="course-item-wrap wow fadeIn animated " data-wow-delay="0.5s">
+                    <div class="course-item-heading">
+                        <a href="Courses.html" class="course-item-link">
+                            <i class="fa fa-desktop  course-item-icon"></i>
+                            <h1 class="text-bold course-item-name">
+                                Front End
+                                <span class="text-color">Developer</span>
+                            </h1>
+                        </a>
+                    </div>
+                    <p class="lead text-secondary couse-item-detail">
+                        Quaerat, dolor aut minus cumque quis enim velit accusantium obcaecati possimus ipsum ex similique nostrum vitae, ea natus
+                        tempore sapiente praesentium nesciunt!
+                    </p>
+                    <button class="btn btn-outline-light">See This Route</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 text-center course-item course-item-3">
+                <div class="course-item-wrap wow fadeIn animated" data-wow-delay="1s">
+                    <div class="course-item-heading">
+                        <a href="Courses.html" class="course-item-link">
+                            <i class="fa fa-database  course-item-icon"></i>
+                            <h1 class="text-bold course-item-name">
+                                Back End
+                                <span class="text-color">Developer</span>
+                            </h1>
+                        </a>
+                    </div>
+                    <p class="lead text-secondary couse-item-detail">
+                        Perferendis repudiandae dignissimos harum quam, fugit nemo totam laboriosam rem? Quaerat, dolor aut minus cumque quis enim
+                    </p>
+                    <button class="btn btn-outline-light">See This Route</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- END COURSES -->
+
+    <!-- FOUNDER -->
+    <div class="container founder" id="founder">
+        <div class="row founder-container">
+            <div class="col-12 text-center founder-intro">
+                <img src="./../../ASSETS/img/logo-header.png" alt="" class="img-fluid founder-logo">
+                <h1 class="display-4 founder-title">
+                    Meet The One And Only
+                </h1>
+                <p class="founder-subtitle">
+                    Mr. Le Quang Song -
+                    <span class="text-secondary">
+                        Founder &amp; CEO of CyberSoft Academy
+                    </span>
+                </p>
+            </div>
+
+            <div class="col-lg-5 founder-img founder-item animated slideInLeft wow text-sm-center mb-sm-4">
+                <img src="../../ASSETS/img/founder.jpg" alt="" class="img-fluid founder-item-img">
+            </div>
+            <div class="col-lg-7 founder-detail founder-item animated slideInRight wow text-sm-center">
+                <p class="lead founder-detail-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus voluptatem eligendi sit nemo fugit
+                    nisi saepe ullam deleniti, nesciunt illo!</p>
+                <p class="lead founder-detail-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum obcaecati quaerat necessitatibus nisi deserunt
+                    consectetur quas unde labore, corrupti harum similique qui possimus debitis iusto enim? Iusto repellat
+                    a maiores beatae distinctio animi cum?
+                </p>
+                <p class="lead founder-detail-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus voluptatem eligendi sit nemo fugit
+                    nisi saepe ullam deleniti, nesciunt illo!</p>
+            </div>
+        </div>
+    </div>
+    <!-- END FOUNDER -->
+
+    <!-- TESTIMONIAL -->
+    <div class="container-fluid testimonial" id="testimonial">
+        <div class="row testimonial-container">
+            <div class="col-12 testimonial-heading text-center">
+                <h1 class="display-4 testimonial-title">
+                    Our Students' Feedback
+                </h1>
+                <p class="testimonial-subtitle">
+                    Of Course They Love It !
+                </p>
+            </div>
+
+            <div class="col-6 m-auto testimonial-container-wrap">
+                <div id="testiCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="media">
+                                <div class="media-left d-none d-lg-block">
+                                    <img src="../../ASSETS/img/people-1.jpg" class="media-object">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">John Doe</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nostrum sapiente,
+                                        nulla perferendis aut officia laborum unde blanditiis mollitia reiciendis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="../../ASSETS/img/people-2.jpg" class="media-object">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">John Doe</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nostrum sapiente,
+                                        nulla perferendis aut officia laborum unde blanditiis mollitia reiciendis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="../../ASSETS/img/people-3.jpg" class="media-object">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">John Doe</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nostrum sapiente,
+                                        nulla perferendis aut officia laborum unde blanditiis mollitia reiciendis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TESTIMONIAL -->
+
+    <!-- CONTACT -->
+    <div class="container contact" id="contact">
+        <div class="row contact-container">
+            <div class="col-12 contact-heading text-center">
+                <h1 class="display-4 contact-title">
+                    Feels Interested Yet?
+                </h1>
+
+            </div>
+
+            <div class="col-md-6 col-12 contact-detail">
+                <p class="contact-subtitle">
+                    Get In Touch With Us
+                </p>
+                <p class="contact-lorem text-justify text-secondary pr-5 mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae non sequi iste earum sunt! Error praesentium ullam eos id,
+                    dolorum cumque neque obcaecati sed veniam rerum quia aspernatur asperiores doloremque nemo. Fugit ex
+                    voluptate officiis?
+                </p>
+                <nav class="navbar navbar-light">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <i class="fa fa-envelope fa-2x"></i>
+                            <a href="mailto:info@cybersoft.edu.vn" class="nav-link">
+                                <span>info@cybersoft.edu.vn</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-phone-square fa-2x"></i>
+                            <a href="#" class="nav-link">
+                                <span>08 09 05 04 032</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-map-marker fa-2x"></i>
+                            <a href="#" class="nav-link">
+                                <span>123 Main Str. HCMC</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="contact-form d-none d-block">
+            <div class="contact-form-wrapper">
+                <div class="contact-form-title mb-4">
+                    <h3 class="text-bold">Leave Us A Message</h3>
+                </div>
+                <form action="" class="contact-form-inputs">
+                    <input type="text" class="form-control input-field" placeholder="Your Name *" required>
+                    <input type="email" class="form-control input-field" placeholder="Your Email *" required>
+                    <textarea class="form-control input-field" placeholder="Your Message *" required></textarea>
+                    <button type="submit" class="btn btn-dark d-block w-100">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="bg-light">
+        <div class="container footer text-dark" id="footer">
+            <div class="row footer-container">
+                <div class="col-md-4 footer-about animated slideInUp wow">
+                    <span class="footer-brand-text">
+                        <img src="./../../ASSETS/img/logo-header.png" alt="" class="img-fluid footer-brand-logo"> CyberSoft Academy
+                    </span>
+                    <p class="footer-lorem text-justify text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae non sequi iste earum sunt! Error praesentium ullam eos id,
+                        dolorum cumque neque obcaecati sed veniam rerum quia aspernatur asperiores doloremque nemo. Fugit
+                        ex voluptate officiis?
+                    </p>
+                </div>
+
+                <div class="col-md-2 footer-sitemap animated slideInUp wow" data-wow-delay="0.2s">
+                    <h3 class="footer-sitemap-title">
+                        Site Map
+                    </h3>
+                    <nav class="navbar navbar-light text-dark px-0">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Courses.html" class="nav-link">
+                                    Courses
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-2 footer-social animated slideInUp wow" data-wow-delay="0.4s">
+                    <h3 class="footer-social-title">
+                        Get Social
+                    </h3>
+                    <nav class="navbar navbar-light text-dark px-0">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-facebook-square"></i>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-twitter-square"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-google-plus-square"></i>
+                                    <span>Google+</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-dribbble"></i>
+                                    <span>Dribble</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-4 footer-upcoming animated slideInUp wow" data-wow-delay="0.6s">
+                    <h3 class="footer-upcoming-title">
+                        Upcoming Courses
+                    </h3>
+                    <nav class="navbar navbar-light text-dark px-0 ">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    <span>12/12/2018: Front-end Class</span>
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    <span>13/12/2018: Programming Basics Class</span>
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    <span>12/12/2018: Back-end Class</span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- SIGN IN SIGN UP MODAL -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="SignInSignUp" tabindex="-1" role="dialog" aria-labelledby="modelTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light align-items-center">
+                    <h4 class="modal-title" id="modelTitle">Sign In</h4>
+                    <button type="button" class="close text-light" id="btn-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    
+                </div>
+                <div class="modal-footer bg-light" id="modalFooter">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END SIGN IN SIGN UP MODAL -->
+
+
+
+
+    
+    
+    <!-- JQUERY -->
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- POPPER -->
+    <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <!-- BOOSTRAP -->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    
+    <script src="./../../ASSETS/js/NavbarEffect.js"></script>
+    <script src="../../assets/vendors/js/wow.min.js"></script> 
+    <script src="../../assets/vendors/js/sweetalert2.js"></script> 
+    <script>
+        new WOW().init();
+    </script>
+    
+    <script src="../Controllers/SignInButton.js"></script>
+    <script src="../Controllers/SignInSignUp.js"></script>
+    <script src="../Services/UserService.js"></script>
+    <script src="../Models/User.js"></script>
+    <script src="../Models/UserList.js"></script>
+    
+    
+</body>
+
+</html>

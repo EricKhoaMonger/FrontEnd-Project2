@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./../../ASSETS/img/logo-header.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+    <!-- WOW CSS -->
+    <link rel="stylesheet" href="../../assets/vendors/css/animate.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../../ASSETS/css/main.css" type="text/css">
+
+    <title>Courses</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light header-nav-menu">
+        <div class="container header-nav-menu-container">
+            <a class="navbar-brand header-brand" href="HomePage.html">
+                <img src="./../../ASSETS/img/logo-header.png" alt="" class="img-fluid header-brand_logo">
+                <span class="header-brand_text">CyberSoft Academy</span>
+            </a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapseNavHeader" aria-controls="collapseNavHeader"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapseNavHeader">
+                <ul class="navbar-nav m-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="HomePage.html">Home
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Courses.html">Courses
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="header-signin-signup">
+                    <button class="btn btn-dark" data-toggle="modal" data-target="#SignInSignUp" id="btnSignInSignUp">Sign In | Sign Up</button>
+                </div>
+                <div class="dropdown open">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Hello,
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="userDropdown">
+                        <button class="dropdown-item" href="#">My Account</button>
+                        <button class="dropdown-item" href="#" id="btnSignOut">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- END HEADER -->
+
+    <!-- BANNER -->
+    <div class="container bannerCourse">
+        <div class="row bannerCourse-container">
+            <div class="col-lg-5 m-auto bannerCourse-anim">
+                <img src="./../../ASSETS/img/coder.png" alt="" class="img-fluid anim-img-coder">
+                <img src="./../../ASSETS/img/js.png" alt="" class="img-fluid anim-skill anim-skill-1">
+                <img src="./../../ASSETS/img/html5.png" alt="" class="img-fluid anim-skill anim-skill-2">
+                <img src="./../../ASSETS/img/css3.png" alt="" class="img-fluid anim-skill anim-skill-3">
+                <img src="./../../ASSETS/img/angular.png" alt="" class="img-fluid anim-skill anim-skill-4">
+                <img src="./../../ASSETS/img/nodejs.png" alt="" class="img-fluid anim-skill anim-skill-5">
+                <img src="./../../ASSETS/img/react.png" alt="" class="img-fluid anim-skill anim-skill-6">
+            </div>
+
+            <div class="col-lg-7 m-auto bannerCourse-text d-none d-lg-block">
+
+                <div class="bannerCourse-feature bannerCourse-feature-1">
+                    <div class="bannerCourse-card card-img bg-dark">
+                        <div class="card-circle">
+                            <span class="card-number">1</span>
+                        </div>
+                    </div>
+                    <div class="bannerCourse-card card-content bg-light">
+                        <div class="card-content-title">
+                            <img src="./../../ASSETS/img/logo-header.png" alt="" class="img-fluid bannerCourse-card-img">
+                            <span class="bannerCourse-card-title">Programming Basics</span>
+                        </div>
+                        <div class="card-content-body">
+                            <nav class="navbar">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                        Data Structure
+                                    </li>
+                                    <li class="nav-item">
+                                        Algorithm
+                                    </li>
+                                    <li class="nav-item">
+                                        Object-Oriented Programming
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <button class="btn btn-dark bannerCourse-btn">See More</button>
+                    </div>
+                </div>
+
+                <div class="bannerCourse-feature bannerCourse-feature-2">
+                    <div class="bannerCourse-card card-img bg-dark">
+                        <div class="card-circle">
+                            <span class="card-number">2</span>
+                        </div>
+                    </div>
+                    <div class="bannerCourse-card card-content bg-light">
+                        <div class="card-content-title">
+                            <img src="./../../ASSETS/img/logo-header.png" alt="" class="img-fluid bannerCourse-card-img">
+                            <span class="bannerCourse-card-title">Front-end Developer</span>
+                        </div>
+                        <div class="card-content-body">
+
+                            <nav class="navbar">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                        Learn through real-life projects
+                                    </li>
+                                    <li class="nav-item">
+                                        Jobs Supporting After Course
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <button class="btn btn-dark bannerCourse-btn">See More</button>
+                    </div>
+                </div>
+
+                <div class="bannerCourse-feature bannerCourse-feature-3">
+                    <div class="bannerCourse-card card-img bg-dark">
+                        <div class="card-circle">
+                            <span class="card-number">3</span>
+                        </div>
+                    </div>
+                    <div class="bannerCourse-card card-content bg-light">
+                        <div class="card-content-title">
+                            <img src="./../../ASSETS/img/logo-header.png" alt="" class="img-fluid bannerCourse-card-img">
+                            <span class="bannerCourse-card-title">Full-stack Developer</span>
+                        </div>
+                        <div class="card-content-body">
+
+                            <nav class="navbar">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                        Learn through real-life projects
+                                    </li>
+                                    <li class="nav-item">
+                                        Jobs Supporting After Course
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <button class="btn btn-dark bannerCourse-btn">See More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END BANNER -->
+
+    <!-- MAIN -->
+    <section class="mainCourse-wrapper bg-dark">
+        <div class="container mainCourse">
+            <div class="row">
+                <div class="col-12 py-5">
+                    <h1 class="display-3 text-center text-bold text-light">
+                        Courses
+                    </h1>
+                </div>
+            </div>
+            <div class="row mainCourse-container">
+                
+            </div>
+        </div>
+    </section>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="bg-light">
+        <div class="container footer text-dark" id="footer">
+            <div class="row footer-container">
+                <div class="col-md-4 footer-about animated slideInUp wow">
+                    <span class="footer-brand-text">
+                        <img src="./../../ASSETS/img/logo-header.png" alt="" class="img-fluid footer-brand-logo"> CyberSoft Academy
+                    </span>
+                    <p class="footer-lorem text-justify text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae non sequi iste earum sunt! Error praesentium ullam eos id,
+                        dolorum cumque neque obcaecati sed veniam rerum quia aspernatur asperiores doloremque nemo. Fugit
+                        ex voluptate officiis?
+                    </p>
+                </div>
+
+                <div class="col-md-2 footer-sitemap animated slideInUp wow" data-wow-delay="0.2s">
+                    <h3 class="footer-sitemap-title">
+                        Site Map
+                    </h3>
+                    <nav class="navbar navbar-light text-dark px-0">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Courses
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-2 footer-social animated slideInUp wow" data-wow-delay="0.4s">
+                    <h3 class="footer-social-title">
+                        Get Social
+                    </h3>
+                    <nav class="navbar navbar-light text-dark px-0">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-facebook-square"></i>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-twitter-square"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-google-plus-square"></i>
+                                    <span>Google+</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-dribbble"></i>
+                                    <span>Dribble</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-4 footer-upcoming animated slideInUp wow" data-wow-delay="0.6s">
+                    <h3 class="footer-upcoming-title">
+                        Upcoming Courses
+                    </h3>
+                    <nav class="navbar navbar-light text-dark px-0 ">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    <span>12/12/2018: Front-end Class</span>
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    <span>13/12/2018: Programming Basics Class</span>
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    <span>12/12/2018: Back-end Class</span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- SIGN IN SIGN UP MODAL -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="SignInSignUp" tabindex="-1" role="dialog" aria-labelledby="modelTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light align-items-center">
+                    <h4 class="modal-title" id="modelTitle">Sign In</h4>
+                    <button type="button" class="close text-light" id="btn-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <div class="container-fluid">
+
+                    </div>
+                </div>
+                <div class="modal-footer bg-light" id="modalFooter">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- JQUERY -->
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- POPPER -->
+    <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <!-- BOOSTRAP -->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="./../../ASSETS/js/NavbarEffect.js"></script>
+    <script src="./../../ASSETS/js/CourseBannerEffect.js"></script>
+    <script src="../../assets/vendors/js/wow.min.js"></script>
+    <script src="../../assets/vendors/js/sweetalert2.js"></script>
+    <script src="../Controllers/SignInButton.js"></script>
+
+
+    <script src="../models/User.js"></script>
+    <script src="../models/CourseList.js"></script>
+    <script src="../Services/CourseService.js"></script>
+    <script src="../Controllers/SignInSignUp.js"></script>
+    <script src="../Services/UserService.js"></script>
+
+    <script src="../Controllers/Courses.js"></script>
+    
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

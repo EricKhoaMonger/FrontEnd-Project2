@@ -1,0 +1,99 @@
+.banner {
+    @include formatBackground(url('../img/jumbotron-banner.jpg'));
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 0;
+    .banner-container {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        .row {
+            .banner-content {
+                position: relative;
+                .banner-title {
+                    @include commonText(70px,
+                    900,
+                    3px);
+                    opacity: 0;
+                    -webkit-animation: titleAnim 1s 0.5s forwards ease-in-out;
+                    animation: titleAnim 1s 0.5s forwards ease-in-out;
+                    text-shadow: 5px 5px #e8e8e8, 8px 8px rgb(167, 167, 167);
+                }
+                @-webkit-keyframes titleAnim {
+                    0% {
+                        -webkit-transform: translateX(-50%);
+                        transform: translateX(-50%);
+                        opacity: 0;
+                    }
+                    100% {
+                        -webkit-transform: rotate(xx) translateX(0);
+                        transform: rotate(xx) translateX(0);
+                        opacity: 1;
+                    }
+                }
+                @keyframes titleAnim {
+                    0% {
+                        -webkit-transform: translateX(-50%);
+                        transform: translateX(-50%);
+                        opacity: 0;
+                    }
+                    100% {
+                        -webkit-transform: rotate(xx) translateX(0);
+                        transform: rotate(xx) translateX(0);
+                        opacity: 1;
+                    }
+                }
+                .text-secondary {
+                    text-align: right;
+                    position: absolute;
+                    right: 60px;
+                    opacity: 0;
+                    -webkit-animation: subTextAnim 1s 0.5s forwards ease-in-out;
+                    animation: subTextAnim 1s 0.5s forwards ease-in-out;                     
+                    @-webkit-keyframes subTextAnim {
+                        0% {
+                            -webkit-transform: rotate(0) translateX(100%);
+                            transform: rotate(0) translateX(100%);
+                            opacity: 0;
+                        }
+                        100% {
+                            -webkit-transform: rotate(0) translateX(0);
+                            transform: rotate(0) translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                    @keyframes subTextAnim {
+                        0% {
+                            -webkit-transform: rotate(0) translateX(100%);
+                            transform: rotate(0) translateX(100%);
+                            opacity: 0;
+                        }
+                        100% {
+                            -webkit-transform: rotate(0) translateX(0);
+                            transform: rotate(0) translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                    &:after {
+                        @include formatBeforeAfter(12%,
+                        3px,
+                        #000);
+                        top: 50%;
+                        left: 280px;
+                    }
+                    &:before {
+                        @include formatBeforeAfter(60%,
+                        3px,
+                        #000);
+                        top: 50%;
+                        left: -180px;
+                    }
+                }
+            }
+        }
+    }
+}

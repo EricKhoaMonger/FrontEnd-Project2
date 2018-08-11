@@ -1,0 +1,84 @@
+.adminPageMain {
+    .row {
+        .adminPageMainUl {
+            .adminPageMainUl-nav {
+                border: 1px solid #bebebe;
+                border-radius: 5px;
+                .nav-item {
+                    .nav-link {
+                        padding: 16px;
+                        border: 0;
+                        color: #111;
+                    }
+                    &:not(:last-child) {
+                        border-bottom: 1px solid #bebebe;
+                    }
+                    .active {
+                        background: #343a40;
+                        color: #fff;
+                    }
+                    &:hover {
+                        background: #bebebe;
+                        .nav-link {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .adminPageContent {
+            #overview,
+            #courseList,
+            #userList {
+                .card-header {
+                    padding: 16px;
+                    .addBtn{
+                        cursor: pointer;
+                    }
+                }
+
+            }
+            #userList,#courseList {
+                thead td,
+                tbody td {
+                    width: 14%;
+                    max-width: 14%;
+                    vertical-align: middle;                    
+                }
+                tbody{
+                    tr{
+                        td{
+                            .img-fluid{
+                                max-height: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+            #courseList,
+            #userList {
+                border: 0;
+                .card-body {
+                    padding: 0;
+                }
+                .myPagination{
+                    .page-item{
+                        .page-link{
+                            color: #111; 
+                        }
+                    }
+                    .page-item.active {
+                        .page-link{
+                            background: #212529;
+                            color: #fff;
+                            border-color: #212529;
+                            &:visited{
+                                outline:0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

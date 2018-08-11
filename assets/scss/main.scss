@@ -1,0 +1,24 @@
+@import 'Helpers/_variables.scss';
+@import 'Helpers/_mixins.scss';
+
+
+@import 'Base/_reset.scss';
+@import 'Base/_normalize.scss';
+
+@import 'Layouts/HomePage/_testimonial.scss';
+@import 'Layouts/HomePage/_contact.scss';
+@import 'Layouts/HomePage/_footer.scss';
+@import 'Layouts/HomePage/_header.scss';
+@import 'Layouts/HomePage/_banner.scss';
+@import 'Layouts/HomePage/_about.scss';
+@import 'Layouts/HomePage/_founders.scss';
+@import 'Layouts/HomePage/_courses.scss';
+
+@import 'Layouts/Courses/_bannerCourse.scss';
+
+@import 'Layouts/HomePage/_courses.scss';
+
+@import 'Layouts/AdminPage/_adminPageMain.scss';
+@import 'Layouts/AdminPage/_adminPageNav.scss';
+
+@import 'Layouts/UserPage/_userPage.scss';

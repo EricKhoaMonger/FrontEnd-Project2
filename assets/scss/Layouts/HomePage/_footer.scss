@@ -1,0 +1,47 @@
+footer {
+    .footer {
+        .footer-container {
+            padding-top: 120px;
+            padding-bottom: 80px;
+            overflow: hidden;
+            .footer-about {
+                .footer-brand-text {
+                    font-size: 1.75rem;
+                    margin-bottom: .5rem;
+                    font-family: inherit;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    color: inherit;
+                    margin-top: 0;
+                    display: inline-block;
+                    height: 70px;
+                    .footer-brand-logo {
+                        height: 50px;
+                    }
+                }
+                .footer-lorem{
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+            }
+            .footer-sitemap {
+                .footer-sitemap-title {
+                    display: inline-block;
+                    height: 70px;
+                }
+            }
+            .footer-social {
+                .footer-social-title {
+                    display: inline-block;
+                    height: 70px;
+                }
+            }
+            .footer-upcoming {
+                .footer-upcoming-title {
+                    display: inline-block;
+                    height: 70px;
+                }
+            }
+        }
+    }
+}
