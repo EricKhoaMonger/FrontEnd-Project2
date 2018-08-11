@@ -1,4 +1,4 @@
-function UserList() {
+export function UserList() {
     this.UserArray = [];
 }
 UserList.prototype.AddUser = function (user) {

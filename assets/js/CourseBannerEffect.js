@@ -1,3 +1,5 @@
+import $ from 'jquery';
+window.jQuery = $;
 $(document).ready(function () {
     // coursesBanner slider
     var i = 0;

@@ -1,4 +1,3 @@
-
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
 		// AMD
@@ -171,3 +170,5 @@ DataTable.ext.renderer.pageButton.bootstrap = function ( settings, host, idx, bu
 
 return DataTable;
 }));
+
+

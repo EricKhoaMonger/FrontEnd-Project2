@@ -1,3 +1,5 @@
+import $ from 'jquery';
+window.jQuery = $;
 $(document).ready(function () {
     $('#btnSignInSignUp').bind('click', ShowSignInForm)
     $('body').delegate('#linkSignUp','click',ShowSignUpForm)

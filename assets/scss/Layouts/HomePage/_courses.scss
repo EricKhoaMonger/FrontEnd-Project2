@@ -1,13 +1,13 @@
 .course {
     .course-container {
         .course-item-1 {
-            @include formatBackground(url('../img/course-basic.jpg'));
+            @include formatBackground(url('../assets/img/course-basic.jpg'));
         }
         .course-item-2 {
-            @include formatBackground(url('../img/front-end.jpg'));
+            @include formatBackground(url('../assets/img/front-end.jpg'));
         }
         .course-item-3 {
-            @include formatBackground(url('../img/back-end.jpg'));
+            @include formatBackground(url('../assets/img/back-end.jpg'));
         }
         .course-item {
             position: relative;

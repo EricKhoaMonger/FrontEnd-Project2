@@ -1,3 +1,17 @@
+import $ from 'jquery';
+window.jQuery = $;
+import './../../assets/vendors/js/bootstrap.bundle.min.js'
+import './../../assets/vendors/js/jquery.dataTables'
+import './../../assets/vendors/js/dataTables.bootstrap4'
+import './../../node_modules/datatables.net'
+
+import {CourseService} from './../services/CourseService'
+import {CourseList} from "./../models/CourseList";
+import {Course} from './../models/Course'
+import ClassicEditor from "./../services/CKEditorService";
+
+import swal from 'sweetalert2'
+
 $(document).ready(function () {
     var courseService = new CourseService();
     var courseList = new CourseList();
@@ -82,10 +96,9 @@ $(document).ready(function () {
 
         var editedCourse = new Course(id, name, des, img, view, creator)
 
-        var ajaxUpdateCourse = courseService.AjaxUpdateCourse(id, name, des, view, creator,img);
+        var ajaxUpdateCourse = courseService.AjaxUpdateCourse(id, name, des, view, creator, img);
         ajaxUpdateCourse
             .done(function (res) {
-                console.log(res)
                 editedCourse = res;
                 courseList.UpdateCourse(editedCourse);
                 swal({
@@ -94,9 +107,7 @@ $(document).ready(function () {
                     showConfirmButton: false,
                     timer: 1500
                 });
-                // setTimeout(() => {
-                //     // location.reload();
-                // }, 2000);
+                $('#logoutModal .close').trigger('click');
             })
             .fail(err => console.log(err));
     }
@@ -125,7 +136,7 @@ $(document).ready(function () {
             </div>
             <div class="form-group>
                 <label for="editor">Course Description</label>
-                <textarea name="txtEditor" id="editor">
+                <textarea id="editor">
                     &lt;p&gt;Here goes the initial content of the editor.&lt;/p&gt;
                 </textarea>
             </div>

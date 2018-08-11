@@ -1,5 +1,5 @@
 .testimonial{
-    @include formatBackground(url('../img/testimonial.jpg'));
+    @include formatBackground(url('../assets/img/testimonial.jpg'));
     background-attachment: fixed;
     .testimonial-container{
         padding: $section-pd;

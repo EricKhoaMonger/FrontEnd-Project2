@@ -1,3 +1,7 @@
+import $ from 'jquery';
+window.jQuery = $;
+import { CourseService } from "./../services/CourseService";
+
 $(document).ready(function () {
     var courseService = new CourseService();
     var allCourses = [];

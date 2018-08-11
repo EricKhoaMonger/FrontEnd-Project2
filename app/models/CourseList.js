@@ -1,4 +1,4 @@
-function CourseList() {
+export function CourseList() {
     this.CourseArr = [];
 }
 

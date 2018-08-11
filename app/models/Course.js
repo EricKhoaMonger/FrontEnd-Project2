@@ -1,4 +1,4 @@
-function Course(id,name,des,img,views,creator) {
+export function Course(id,name,des,img,views,creator) {
     this.MaKhoaHoc = id;
     this.TenKhoaHoc = name;
     this.MoTa = des,

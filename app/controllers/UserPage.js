@@ -1,3 +1,10 @@
+
+import $ from 'jquery';
+window.jQuery = $;
+import { UserService } from "./../services/UserService";
+import {User} from './../models/User'
+import swal from 'sweetalert2'
+
 $(document).ready(function () {
     var userService = new UserService();
     ShowUserProfile();

@@ -1,4 +1,6 @@
-function UserService() {
+import $ from 'jquery';
+window.jQuery = $;
+export function UserService() {
 
 }
 

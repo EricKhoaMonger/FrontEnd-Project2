@@ -1,3 +1,9 @@
+import $ from 'jquery';
+window.jQuery = $;
+import {User} from './../models/User'
+import {UserService} from './../services/UserService'
+import swal from 'sweetalert2'
+
 $(document).ready(function () {
     var userService = new UserService();
     // Check localStorage status

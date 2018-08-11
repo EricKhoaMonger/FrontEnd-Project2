@@ -1,3 +1,7 @@
+import $ from 'jquery';
+window.jQuery = $;
+import {CourseList} from './../models/CourseList'
+import {CourseService} from './../services/CourseService'
 $(document).ready(function () {
     var courseService = new CourseService();
     var courseList = new CourseList();

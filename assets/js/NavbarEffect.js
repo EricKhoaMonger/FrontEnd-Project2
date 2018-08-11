@@ -1,3 +1,5 @@
+import $ from 'jquery';
+window.jQuery = $;
 $(document).ready(function () {
     // navbar background change when scroll
     $(window).scroll(function () {

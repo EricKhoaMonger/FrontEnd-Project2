@@ -1,4 +1,4 @@
-function User(id,pass,name,email,phone,usertypeid,usertype){
+export function User(id,pass,name,email,phone,usertypeid,usertype){
     this.TaiKhoan = id;    
     this.MatKhau = pass;   
     this.HoTen = name; 

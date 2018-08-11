@@ -1,4 +1,17 @@
-// Call the dataTables jQuery plugin
+import $ from 'jquery';
+window.jQuery = $;
+import './../../assets/vendors/js/bootstrap.bundle.min.js'
+import './../../assets/vendors/js/jquery.dataTables'
+import './../../assets/vendors/js/dataTables.bootstrap4'
+import './../../node_modules/datatables.net'
+
+import {CourseService} from './../services/CourseService'
+import {UserService} from './../services/UserService'
+import {UserList} from "./../models/UserList";
+import {User} from './../models/User'
+
+import swal from 'sweetalert2'
+
 $(document).ready(function () {
   var userList = new UserList();
   var userService = new UserService();

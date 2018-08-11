@@ -1,4 +1,6 @@
-function CourseService() {
+import $ from 'jquery';
+window.jQuery = $;
+export function CourseService() {
 
 }
 

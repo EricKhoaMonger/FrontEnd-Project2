@@ -5,7 +5,7 @@ body {
   padding: 80px 0; }
 
 .testimonial {
-  background-image: url("../img/testimonial.jpg");
+  background-image: url("../assets/img/testimonial.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -121,6 +121,7 @@ body {
           margin-bottom: 30px; }
         .contact .contact-form .contact-form-wrapper .contact-form-inputs textarea {
           resize: none; } }
+
 footer .footer .footer-container {
   padding-top: 120px;
   padding-bottom: 80px;
@@ -178,7 +179,7 @@ footer .footer .footer-container {
   box-shadow: 0 1px 3px #ccc; }
 
 .banner {
-  background-image: url("../img/jumbotron-banner.jpg");
+  background-image: url("../assets/img/jumbotron-banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -203,6 +204,7 @@ footer .footer .footer-container {
         -webkit-animation: titleAnim 1s 0.5s forwards ease-in-out;
         animation: titleAnim 1s 0.5s forwards ease-in-out;
         text-shadow: 5px 5px #e8e8e8, 8px 8px #a7a7a7; }
+
 @-webkit-keyframes titleAnim {
   0% {
     -webkit-transform: translateX(-50%);
@@ -212,6 +214,7 @@ footer .footer .footer-container {
     -webkit-transform: rotate(xx) translateX(0);
     transform: rotate(xx) translateX(0);
     opacity: 1; } }
+
 @keyframes titleAnim {
   0% {
     -webkit-transform: translateX(-50%);
@@ -228,6 +231,7 @@ footer .footer .footer-container {
         opacity: 0;
         -webkit-animation: subTextAnim 1s 0.5s forwards ease-in-out;
         animation: subTextAnim 1s 0.5s forwards ease-in-out; }
+
 @-webkit-keyframes subTextAnim {
   0% {
     -webkit-transform: rotate(0) translateX(100%);
@@ -237,6 +241,7 @@ footer .footer .footer-container {
     -webkit-transform: rotate(0) translateX(0);
     transform: rotate(0) translateX(0);
     opacity: 1; } }
+
 @keyframes subTextAnim {
   0% {
     -webkit-transform: rotate(0) translateX(100%);
@@ -288,6 +293,7 @@ footer .footer .footer-container {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
+
 .about .about-container .about-detail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,10 +317,12 @@ footer .footer .footer-container {
     letter-spacing: 0px;
     text-align: justify;
     line-height: 1.5; }
+
 .about .about-container .about-vid iframe {
   width: 100%;
   height: 100%;
   min-height: 250px; }
+
 .about .about-container .about-item {
   padding: 0 30px; }
 
@@ -343,6 +351,7 @@ footer .footer .footer-container {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
+
 .founder .founder-container .founder-detail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,24 +369,28 @@ footer .footer .footer-container {
     letter-spacing: 0px;
     text-align: justify;
     line-height: 1.5; }
+
 .founder .founder-container .founder-item {
   padding: 0 30px; }
 
 .course .course-container .course-item-1 {
-  background-image: url("../img/course-basic.jpg");
+  background-image: url("../assets/img/course-basic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+
 .course .course-container .course-item-2 {
-  background-image: url("../img/front-end.jpg");
+  background-image: url("../assets/img/front-end.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+
 .course .course-container .course-item-3 {
-  background-image: url("../img/back-end.jpg");
+  background-image: url("../assets/img/back-end.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+
 .course .course-container .course-item {
   position: relative;
   max-height: 600px;
@@ -448,6 +461,7 @@ footer .footer .footer-container {
         top: 35%;
         left: 50%;
         animation: js-rot 4s infinite linear; }
+
 @keyframes js-rot {
   from {
     transform: rotate(45deg) translate(20px) rotate(-45deg); }
@@ -457,6 +471,7 @@ footer .footer .footer-container {
         top: 43%;
         left: 25%;
         animation: html-rot 4s infinite linear; }
+
 @keyframes html-rot {
   from {
     transform: rotate(-45deg) translate(-13px) rotate(45deg); }
@@ -466,6 +481,7 @@ footer .footer .footer-container {
         top: 38%;
         left: 6%;
         animation: css-rot 3s infinite linear; }
+
 @keyframes css-rot {
   from {
     transform: rotate(45deg) translate(-5px) rotate(-45deg); }
@@ -475,6 +491,7 @@ footer .footer .footer-container {
         top: 40%;
         left: 70%;
         animation: ang-rot 2s infinite linear; }
+
 @keyframes ang-rot {
   from {
     transform: rotate(-45deg) translate(-8px) rotate(45deg); }
@@ -484,6 +501,7 @@ footer .footer .footer-container {
         top: 50%;
         left: 5%;
         animation: node-rot 3s infinite linear; }
+
 @keyframes node-rot {
   from {
     transform: rotate(45deg) translate(10px) rotate(-45deg); }
@@ -493,6 +511,7 @@ footer .footer .footer-container {
         top: 50%;
         left: 81%;
         animation: react-rot 2.5s infinite linear; }
+
 @keyframes react-rot {
   from {
     transform: rotate(45deg) translate(-20px) rotate(-45deg); }
@@ -582,20 +601,23 @@ footer .footer .footer-container {
         opacity: 1; }
 
 .course .course-container .course-item-1 {
-  background-image: url("../img/course-basic.jpg");
+  background-image: url("../assets/img/course-basic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+
 .course .course-container .course-item-2 {
-  background-image: url("../img/front-end.jpg");
+  background-image: url("../assets/img/front-end.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+
 .course .course-container .course-item-3 {
-  background-image: url("../img/back-end.jpg");
+  background-image: url("../assets/img/back-end.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+
 .course .course-container .course-item {
   position: relative;
   max-height: 600px;
@@ -660,6 +682,7 @@ footer .footer .footer-container {
     background: #bebebe; }
     .adminPageMain .row .adminPageMainUl .adminPageMainUl-nav .nav-item:hover .nav-link {
       color: #fff; }
+
 .adminPageMain .row .adminPageContent #overview .card-header,
 .adminPageMain .row .adminPageContent #courseList .card-header,
 .adminPageMain .row .adminPageContent #userList .card-header {
@@ -668,14 +691,17 @@ footer .footer .footer-container {
   .adminPageMain .row .adminPageContent #courseList .card-header .addBtn,
   .adminPageMain .row .adminPageContent #userList .card-header .addBtn {
     cursor: pointer; }
+
 .adminPageMain .row .adminPageContent #userList thead td,
 .adminPageMain .row .adminPageContent #userList tbody td, .adminPageMain .row .adminPageContent #courseList thead td,
 .adminPageMain .row .adminPageContent #courseList tbody td {
   width: 14%;
   max-width: 14%;
   vertical-align: middle; }
+
 .adminPageMain .row .adminPageContent #userList tbody tr td .img-fluid, .adminPageMain .row .adminPageContent #courseList tbody tr td .img-fluid {
   max-height: 200px; }
+
 .adminPageMain .row .adminPageContent #courseList,
 .adminPageMain .row .adminPageContent #userList {
   border: 0; }
@@ -772,7 +798,6 @@ body {
     #wrapper #page-content-wrapper {
       padding: 20px;
       position: relative; }
-
   .toggled {
     padding-left: 250px; }
     .toggled #sidebar-wrapper {
@@ -780,5 +805,3 @@ body {
     .toggled #page-content-wrapper {
       position: relative;
       margin-right: 0; } }
-
-/*# sourceMappingURL=main.css.map */
