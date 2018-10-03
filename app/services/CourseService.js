@@ -34,26 +34,20 @@ CourseService.prototype.AjaxAddCourse = function (khoahoc) {
     });
 }
 
-CourseService.prototype.AjaxUpdateCourse = function (id,name,des,view,creator) {
-    var obj = JSON.stringify({
-        MaKhoaHoc: id,
-        TenKhoaHoc: name,
-        MoTa:des,
-        LuotXem:view,
-        NguoiTap:creator
-    })
+CourseService.prototype.AjaxUpdateCourse = function (edittedcourse) {
+    var obj = JSON.stringify(edittedcourse)
     var urlAPI = 'http://sv.myclass.vn/api/QuanLyTrungTam/CapNhatKhoaHoc'
     return $.ajax({
-        type:'PUT',
-        url: urlAPI  ,
+        type: 'PUT',
+        url: urlAPI,
         data: obj,
-        contentType:'application/json'
+        contentType: 'application/json'
     })
 }
 
-CourseService.prototype.AjaxRemoveCourse = function(id) {
+CourseService.prototype.AjaxRemoveCourse = function (id) {
     return $.ajax({
-        type:'DELETE',
-        url:`http://sv.myclass.vn/api/QuanLyTrungTam/XoaKhoaHoc/${id}`
+        type: 'DELETE',
+        url: `http://sv.myclass.vn/api/QuanLyTrungTam/XoaKhoaHoc/${id}`
     })
 }

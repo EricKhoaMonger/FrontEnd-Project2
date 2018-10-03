@@ -5,10 +5,18 @@ import './../../assets/vendors/js/jquery.dataTables'
 import './../../assets/vendors/js/dataTables.bootstrap4'
 import './../../node_modules/datatables.net'
 
-import {CourseService} from './../services/CourseService'
-import {UserService} from './../services/UserService'
-import {UserList} from "./../models/UserList";
-import {User} from './../models/User'
+import {
+  CourseService
+} from './../services/CourseService'
+import {
+  UserService
+} from './../services/UserService'
+import {
+  UserList
+} from "./../models/UserList";
+import {
+  User
+} from './../models/User'
 
 import swal from 'sweetalert2'
 
@@ -307,10 +315,10 @@ $(document).ready(function () {
     $('#logoutModal .modal-body').html(modalBody);
     var userCouseList = courseService.AjaxUserCourses(id);
     userCouseList
-      .done(res => {        
+      .done(res => {
         var userCourses = res;
         var selectUserCourses = '';
-        if(userCourses === "Did not find the course") {
+        if (userCourses === "Did not find the course") {
           selectUserCourses = `
               <option>Found no course</option>`;
         } else {
@@ -331,7 +339,7 @@ $(document).ready(function () {
               for (let j = 0; j < userCourses.length; j++) {
                 if (userCourses[j].MaKhoaHoc == courses[i].MaKhoaHoc) {
                   courses.splice(i, 1)
-                }                
+                }
               }
               selectAllCouses += `
                     <option data-user-id ="${id}" data-id="${courses[i].MaKhoaHoc}">${courses[i].MaKhoaHoc} | ${courses[i].TenKhoaHoc}</option>

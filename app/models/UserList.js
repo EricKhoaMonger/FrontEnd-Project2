@@ -31,15 +31,9 @@ UserList.prototype.FindUserIndex = function (id) {
     }
     return -1;
 }
-UserList.prototype.UpdateUser = function (editedUser) {
-    var index = this.FindUserIndex(editedUser.TaiKhoan);
+UserList.prototype.UpdateUser = function (edittedUser) {
+    var index = this.FindUserIndex(edittedUser.TaiKhoan);
     if (index !== -1) {
-        var oldUser = this.UserArray[index];
-        oldUser.TaiKhoan = editedUser.TaiKhoan;
-        oldUser.MatKhau = editedUser.MatKhau;
-        oldUser.HoTen = editedUser.HoTen;
-        oldUser.Email = editedUser.Email;
-        oldUser.SoDT = editedUser.SoDT;
-        oldUser.MaLoaiNguoiDung = editedUser.MaLoaiNguoiDung;
+        this.UserArray[index] = edittedUser;
     }
 }

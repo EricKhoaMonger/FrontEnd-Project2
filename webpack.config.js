@@ -1,6 +1,8 @@
 const path = require('path');
-const {styles} = require('@ckeditor/ckeditor5-dev-utils');
-const CKEditorWebpackPlugin = require( '@ckeditor/ckeditor5-dev-webpack-plugin' );
+const {
+  styles
+} = require('@ckeditor/ckeditor5-dev-utils');
+const CKEditorWebpackPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
 
 module.exports = {
   entry: './app/controllers/main.js',
@@ -17,10 +19,9 @@ module.exports = {
     })
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.scss$/,
-        use:['style-loader','css-loader','sass-loader']
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         // Or /ckeditor5-[^/]+\/theme\/icons\/[^/]+\.svg$/ if you want to limit this loader
@@ -38,7 +39,7 @@ module.exports = {
               singleton: true
             }
           },
-          
+
           {
             loader: 'postcss-loader',
             options: styles.getPostCssConfig({
@@ -50,7 +51,7 @@ module.exports = {
           },
         ]
       },
-      
+
     ],
   },
 };

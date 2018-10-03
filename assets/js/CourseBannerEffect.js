@@ -2,7 +2,7 @@ import $ from 'jquery';
 window.jQuery = $;
 $(document).ready(function () {
     // coursesBanner slider
-    var i = 0;
+    var i = 1;
     var slides = $('.bannerCourse-feature'); // get list of slides
     var time = 4000; // set timer
 
@@ -14,12 +14,14 @@ $(document).ready(function () {
             setTimeout(() => // remove 'active' class
                 slide.classList.remove('active'),
                 3000)
-            slide.style.zIndex = "10";
+
         }
 
-        slides[i].classList.add('active'); // add class active to make slides slideIn
-        setTimeout(circleOn, 1000); // play Neon effect after 1s
-        slides[i].style.zIndex = "100"; // set z-index to make button clickable
+        if (slides[i] !== undefined) {
+            slides[i].classList.add('active'); // add class active to make slides slideIn
+            setTimeout(circleOn, 1000); // play Neon effect after 1s
+            slides[i].style.zIndex = "100"; // set z-index to make button clickable
+        } else return
 
         if (i < slides.length - 1) { // condition for function
             i++;

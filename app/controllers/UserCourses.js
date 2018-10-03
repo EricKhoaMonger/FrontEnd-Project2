@@ -1,6 +1,8 @@
 import $ from 'jquery';
 window.jQuery = $;
-import { CourseService } from "./../services/CourseService";
+import {
+    CourseService
+} from "./../services/CourseService";
 
 $(document).ready(function () {
     var courseService = new CourseService();
@@ -16,19 +18,20 @@ $(document).ready(function () {
                 var content = '';
                 allCourses = res;
 
-                courseService.AjaxUserCourses(localUser.TaiKhoan)
-                    .done(res1 => { // get user courses
-                        userCourses = res1;
-                        for (let i = 0; i < allCourses.length; i++) {
-                            for (let k = 0; k < userCourses.length; k++) {
-                                if (userCourses[k].MaKhoaHoc === allCourses[i].MaKhoaHoc) {
-                                    showingCourses.push(allCourses[i])
+                if (localUser !== null) {
+                    courseService.AjaxUserCourses(localUser.TaiKhoan)
+                        .done(res1 => { // get user courses
+                            userCourses = res1;
+                            for (let i = 0; i < allCourses.length; i++) {
+                                for (let k = 0; k < userCourses.length; k++) {
+                                    if (userCourses[k].MaKhoaHoc === allCourses[i].MaKhoaHoc) {
+                                        showingCourses.push(allCourses[i])
+                                    }
                                 }
-                            }
 
-                        }
-                        for (const showingCourse of showingCourses) {
-                            content += `
+                            }
+                            for (const showingCourse of showingCourses) {
+                                content += `
                                 <div class="col-md-3">
                                     <div class="card">
                                         <img src="${showingCourse.HinhAnh}" class="card-img-top" height="200px" width="100%">
@@ -42,15 +45,16 @@ $(document).ready(function () {
                                     </div>
                                 </div>
                             `;
-                        }
-                        $('#userRegisteredCourses').html(content);
-                    })
-                    .fail(err => console.log(err));
+                            }
+                            $('#userRegisteredCourses').html(content);
+                        })
+                        .fail(err => console.log(err));
+                } else return
             })
             .fail(err => console.log(err));
     }
 
-    $('body').delegate('#showDetail','click',function () {
+    $('body').delegate('#showDetail', 'click', function () {
         var name = $(this).attr('data-name');
         var detail = $(this).attr('data-detail') !== "" ? $(this).attr('data-detail') : "This course has not updated any detail yet";
 
@@ -73,7 +77,7 @@ $(document).ready(function () {
         $('#logoutModal .modal-dialog').addClass('modal-lg');
     })
 
-    $('body').delegate('#btnCancel','click',function() {
+    $('body').delegate('#btnCancel', 'click', function () {
         $('#logoutModal .close').trigger('click');
     })
 

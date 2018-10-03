@@ -5,9 +5,15 @@ import './../../assets/vendors/js/jquery.dataTables'
 import './../../assets/vendors/js/dataTables.bootstrap4'
 import './../../node_modules/datatables.net'
 
-import {CourseService} from './../services/CourseService'
-import {CourseList} from "./../models/CourseList";
-import {Course} from './../models/Course'
+import {
+    CourseService
+} from './../services/CourseService'
+import {
+    CourseList
+} from "./../models/CourseList";
+import {
+    Course
+} from './../models/Course'
 import ClassicEditor from "./../services/CKEditorService";
 
 import swal from 'sweetalert2'
@@ -87,20 +93,21 @@ $(document).ready(function () {
     }
     // Update Course
     function UpdateCourse() {
+        let localAdmin = JSON.parse(localStorage.getItem('CurrentUser'))
         var id = $('#txtCourseId').val();
         var name = $('#txtCourseName').val();
         var des = editor.getData();
         var img = $('#txtImgUrl').val();
         var view = $('#numView').val();
-        var creator = $('#txtCreator').val();
+        var creator = localAdmin.TaiKhoan
 
-        var editedCourse = new Course(id, name, des, img, view, creator)
+        var edittedCourse = new Course(id, name, des, img, view, creator)
 
-        var ajaxUpdateCourse = courseService.AjaxUpdateCourse(id, name, des, view, creator, img);
+        var ajaxUpdateCourse = courseService.AjaxUpdateCourse(edittedCourse);
         ajaxUpdateCourse
             .done(function (res) {
-                editedCourse = res;
-                courseList.UpdateCourse(editedCourse);
+
+                courseList.UpdateCourse(edittedCourse);
                 swal({
                     type: 'success',
                     title: 'Course Updated Successfully!',
@@ -108,8 +115,20 @@ $(document).ready(function () {
                     timer: 1500
                 });
                 $('#logoutModal .close').trigger('click');
+                setTimeout(() => {
+                    location.reload()
+                }, 2000);
+
             })
-            .fail(err => console.log(err));
+            .fail(err => {
+                swal({
+                    type: 'error',
+                    title: 'Something went wrong!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                return
+            });
     }
 
     // Add Course Event
@@ -249,7 +268,15 @@ $(document).ready(function () {
                 }
 
             })
-            .fail(err => console.log(err));
+            .fail(err => {
+                swal({
+                    type: 'error',
+                    title: 'Something went wrong!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                return
+            });
     });
 
     // See Course detail

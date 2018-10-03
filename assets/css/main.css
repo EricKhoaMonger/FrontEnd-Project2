@@ -440,8 +440,8 @@ footer .footer .footer-container {
       text-align: justify; }
 
 .bannerCourse {
-  min-height: 600px;
-  height: 100vh; }
+  height: 90vh;
+  margin-top: 100px; }
   .bannerCourse .bannerCourse-container {
     height: 100%; }
     .bannerCourse .bannerCourse-container .bannerCourse-anim {

@@ -1,8 +1,11 @@
-
 import $ from 'jquery';
 window.jQuery = $;
-import { UserService } from "./../services/UserService";
-import {User} from './../models/User'
+import {
+    UserService
+} from "./../services/UserService";
+import {
+    User
+} from './../models/User'
 import swal from 'sweetalert2'
 
 $(document).ready(function () {
@@ -11,22 +14,25 @@ $(document).ready(function () {
 
     function ShowUserProfile() {
         var localUser = JSON.parse(localStorage.getItem("CurrentUser"));
-        var ajaxUserDetail = userService.AjaxGetUserList();
-        ajaxUserDetail
-            .done(users => {
-                for (const user of users) {
-                    if (localUser.TaiKhoan === user.TaiKhoan) {
-                        $('#userId').val(user.TaiKhoan);
-                        $('#userPass').val(user.MatKhau);
-                        $('#userName').val(user.HoTen);
-                        $('#userEmail').val(user.Email);
-                        $('#userPhone').val(user.SoDT);
+        if (localUser != null) {
+            var ajaxUserDetail = userService.AjaxGetUserList();
+            ajaxUserDetail
+                .done(users => {
+                    for (const user of users) {
+                        if (localUser.TaiKhoan === user.TaiKhoan) {
+                            $('#userId').val(user.TaiKhoan);
+                            $('#userPass').val(user.MatKhau);
+                            $('#userName').val(user.HoTen);
+                            $('#userEmail').val(user.Email);
+                            $('#userPhone').val(user.SoDT);
+                        }
                     }
-                }
-            })
-            .fail(err => console.log(err));
+                })
+                .fail(err => console.log(err));
+        } else return
+
     }
-    
+
     $('#editProfile').css('cursor', 'pointer');
     $('#editProfile').bind('click', function () {
         $('#wrapper .active').removeClass('active');
