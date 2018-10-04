@@ -20,7 +20,7 @@ $(document).ready(function () {
         if (slides[i] !== undefined) {
             slides[i].classList.add('active'); // add class active to make slides slideIn
             setTimeout(circleOn, 1000); // play Neon effect after 1s
-            slides[i].style.zIndex = "100"; // set z-index to make button clickable
+            // slides[i].style.zIndex = "100"; // set z-index to make button clickable
         } else return
 
         if (i < slides.length - 1) { // condition for function
