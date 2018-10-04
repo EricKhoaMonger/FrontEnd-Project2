@@ -89,7 +89,14 @@ $(document).ready(function () {
                     }, 2000);
                 }
             })
-            .fail(err => console.log(err));
+            .fail(err => {
+                swal({
+                    type: 'error',
+                    title: `Something's wrong here! Maybe a duplicate of Course ID`,
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
     }
     // Update Course
     function UpdateCourse() {
